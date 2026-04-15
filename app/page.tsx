@@ -61,8 +61,6 @@ export default function Home() {
       setInvoice(data.paymentRequest);
       setInvoiceUrl(data.paymentUrl || null);
       setStatus("Waiting for payment...");
-      // Poll for payment status (demo: skip real polling)
-      setTimeout(() => setStatus("Paid!"), 8000);
     } catch (err) {
       setStatus("Error generating invoice");
     }

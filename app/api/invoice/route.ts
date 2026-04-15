@@ -17,9 +17,10 @@ export async function POST(request: Request) {
   }
 
   try {
-    // Amount is already in sats as an integer
+    // Amount is in sats (integer)
+    // OpenNode accepts integer amounts even for BTC currency
     const response = await axios.post("https://dev-api.opennode.co/v1/charges", {
-      amount: Math.round(amount), // Ensure it's an integer
+      amount: Math.round(amount),
       description,
       currency: "BTC",
     }, {
