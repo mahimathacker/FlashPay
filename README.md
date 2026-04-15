@@ -1,7 +1,7 @@
 
 # FlashPay
 
-A simple web app to solve cross-border payment fees for Indian freelancers using the Lightning Network.
+A simple web app to solve cross-border payment fees using the Lightning Network.
 
 ## Features
 - Enter name, work description, and amount in USD
